@@ -20,7 +20,7 @@
 
 > We have similar applications available for [Go](https://github.com/IBM/go-web-app), [Java Liberty](https://github.com/IBM/java-liberty-web-app), [Python Flask](https://github.com/IBM/flask-web-app), [Swift](https://github.com/IBM/swift-web-app), and [Node](https://github.com/IBM/nodejs-web-app).
 
-In this sample application, you will create a basic Java web application using Spring.  This provides a starting point for creating Java microservice applications running on [Spring](https://spring.io/). It contains no default application code, but comes with standard best practices, including a health check and application metric monitoring.
+In this sample application, you will create a basic Java web application using Spring.  This provides a good starting point for creating Java microservice applications running on [Spring](https://spring.io/). It contains no default application code, but comes with standard best practices, including a health check and application metric monitoring.
 
 Capabilities are provided through dependencies in the `pom.xml` file.  The ports are set to the defaults of `8080` for http and `8443` for https in the `pom.xml` file.
 
