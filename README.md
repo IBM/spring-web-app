@@ -64,7 +64,10 @@ To run an application in Docker use the Docker file called `Dockerfile`. If you 
 
 #### IBM Cloud Developer Tools
 
-Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your machine by using the following installation command: `curl -sL https://ibm.biz/idt-installer | bash`.
+Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your machine by running the following command:
+```
+curl -sL https://ibm.biz/idt-installer | bash
+```
 
 The ports are set to the defaults of `8080` for http and `8443` for https and are exposed to IBM Cloud Developer Tools in the `cli-config.yml` file.
 
