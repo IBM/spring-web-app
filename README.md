@@ -20,9 +20,9 @@
 
 > We have similar applications available for [Go](https://github.com/IBM/go-web-app), [Java Liberty](https://github.com/IBM/java-liberty-web-app), [Python Flask](https://github.com/IBM/flask-web-app), [Swift](https://github.com/IBM/swift-web-app), and [Node](https://github.com/IBM/nodejs-web-app).
 
-In this sample application, you will create a basic Java web application using Spring.  This provides a good starting point for creating Java microservice applications running on [Spring](https://spring.io/). It contains no default application code, but comes with standard best practices, including a health check and application metric monitoring.
+In this sample application, you will create a basic Java web application using Spring. This provides a good starting point for creating Java microservice applications running on [Spring](https://spring.io/). It contains no default application code, but comes with standard best practices, including a health check and application metric monitoring.
 
-Capabilities are provided through dependencies in the `pom.xml` file.  The ports are set to the defaults of `8080` for http and `8443` for https in the `pom.xml` file.
+Capabilities are provided through dependencies in the `pom.xml` file. The ports are set to the defaults of `8080` for http and `8443` for https in the `pom.xml` file.
 
 The application exposes the following endpoints:
 * Health endpoint: `<host>:<port>/health` e.g. http://localhost:8080/health
@@ -30,7 +30,7 @@ The application exposes the following endpoints:
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/02b13105-f1ac-3350-b3de-23131ce11772/java-web-app-with-spring) or [build it locally](#building-locally) by cloning this repo first.  Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/starter-kits/02b13105-f1ac-3350-b3de-23131ce11772/java-web-app-with-spring) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
@@ -40,12 +40,12 @@ You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/a
     </a>
 </p>
 
-Use the button above to deploy this same application to IBM Cloud.  This option will create a deployment pipeline, complete with a hosted Git lab project and devops toolchain.  You will have the option of deploying to either CloudFoundry or a Kubernetes cluster. [IBM Cloud DevOps](https://www.ibm.com/cloud-computing/bluemix/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. 
+Use the button above to deploy this same application to IBM Cloud. This option will create a deployment pipeline, complete with a hosted Git lab project and DevOps toolchain. You will have the option of deploying to either Cloud Foundry or a Kubernetes cluster. [IBM Cloud DevOps](https://www.ibm.com/cloud/devops) services provides toolchains as a set of tool integrations that support development, deployment, and operations tasks inside IBM Cloud. 
 
 
 ### Building Locally
 
-To get started building this application locally, you can either run the application natively or use the IBM Cloud Developer Tools for containerization and easy deployment to IBM Cloud.
+To get started building this application locally, you can either run the application natively or use the [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) for containerization and easy deployment to IBM Cloud.
 
 #### Native Application Development
 
@@ -64,7 +64,7 @@ To run an application in Docker use the Docker file called `Dockerfile`. If you 
 
 #### IBM Cloud Developer Tools
 
-Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli/index.html#overview) on your machine by using the following installation command: `curl -sL https://ibm.biz/idt-installer | bash`.
+Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started) on your machine by using the following installation command: `curl -sL https://ibm.biz/idt-installer | bash`.
 
 The ports are set to the defaults of `8080` for http and `8443` for https and are exposed to IBM Cloud Developer Tools in the `cli-config.yml` file.
 
@@ -75,7 +75,7 @@ ibmcloud dev build
 ibmcloud dev run
 ```
 
-This will launch your application locally.  When you are ready to deploy to IBM Cloud on CloudFoundry or Kubernetes, run one of the commands below:
+This will launch your application locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the commands below:
 
 ```bash
 ibmcloud dev deploy -t buildpack
@@ -90,7 +90,7 @@ ibmcloud dev debug
 ```
 
 ## Next Steps
-* Learn more about augmenting your Java applications on IBM Cloud with the [Java Programming Guide](https://cloud.ibm.com/docs/java).
+* Learn more about augmenting your Java applications on IBM Cloud with the [Java Programming Guide](https://cloud.ibm.com/docs/java?topic=java-getting-started).
 * Explore other [sample applications](https://cloud.ibm.com/developer/appservice/starter-kits) on IBM Cloud.
 
 ## License
