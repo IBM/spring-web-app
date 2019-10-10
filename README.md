@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://cloud.ibm.com">
-        <img src="https://landscape.cncf.io/logos/ibm-cloud.svg" height="100" alt="IBM Cloud">
+        <img src="https://landscape.cncf.io/logos/ibm-cloud-kcsp.svg" height="100" alt="IBM Cloud">
     </a>
 </p>
 
@@ -69,7 +69,13 @@ Install [IBM Cloud Developer Tools](https://cloud.ibm.com/docs/cli?topic=cloud-c
 curl -sL https://ibm.biz/idt-installer | bash
 ```
 
-The ports are set to the defaults of `8080` for http and `8443` for https and are exposed to IBM Cloud Developer Tools in the `cli-config.yml` file.
+Create an application on IBM Cloud by running:
+
+```bash
+ibmcloud dev create
+```
+
+This will create and download a starter application with the necessary files needed for local development and deployment.
 
 Your application will be compiled with Docker containers. To compile and run your app, run:
 
@@ -81,8 +87,8 @@ ibmcloud dev run
 This will launch your application locally. When you are ready to deploy to IBM Cloud on Cloud Foundry or Kubernetes, run one of the following commands:
 
 ```bash
-ibmcloud dev deploy -t buildpack
-ibmcloud dev deploy -t container
+ibmcloud dev deploy -t buildpack // to Cloud Foundry
+ibmcloud dev deploy -t container // to K8s cluster
 ```
 
 You can build and debug your app locally with:
