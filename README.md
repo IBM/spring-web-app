@@ -25,12 +25,12 @@ In this sample application, you will create a basic Java web application using S
 Capabilities are provided through dependencies in the `pom.xml` file. The ports are set to the defaults of `8080` for http and `8443` for https in the `pom.xml` file.
 
 The application exposes the following endpoints:
-* Health endpoint: `<host>:<port>/actuator/health` e.g. http://localhost:8080/actuator/health
+* Health endpoint: `<host>:<port>/health` e.g. http://localhost:8080/health
 * Web content: `<host>:<port>`
 
 ## Steps
 
-You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=402006ad-52b5-3cba-9029-c7d77ac2209a) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/actuator/health` endpoint to build out your cloud native application.
+You can [deploy this application to IBM Cloud](https://cloud.ibm.com/developer/appservice/create-app?starterKit=402006ad-52b5-3cba-9029-c7d77ac2209a) or [build it locally](#building-locally) by cloning this repo first. Once your app is live, you can access the `/health` endpoint to build out your cloud native application.
 
 ### Deploying to IBM Cloud
 
