@@ -24,7 +24,7 @@ public class HealthEndpointTest {
 
     @Test
     public void testEndpoint() throws Exception {
-        String endpoint = "http://localhost:" + port + "/actuator/health";
+        String endpoint = "http://localhost:" + port + "/health";
         String response = server.getForObject(endpoint, String.class);
         assertTrue("Invalid response from server : " + response, response.startsWith("{\"status\":\"UP\""));
     }
